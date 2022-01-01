@@ -1,0 +1,61 @@
+.parent {
+    width:100vw;
+    height:100vh;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.counter {
+    width:18vw;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.counter-button {
+    height: 60px;
+    width:60px;
+    border-radius: 30px;;
+    color: white;
+    background-color: rgb(96, 96, 255);
+    border:none;
+    box-shadow: none;
+}
+h4 {
+    font-size: 50px;
+}
+.title {
+    margin : 0 5px 5px;
+}
+.snackbar {
+    visibility: visible;
+    border-radius: 16px;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: rgb(131, 127, 127);
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+ 
